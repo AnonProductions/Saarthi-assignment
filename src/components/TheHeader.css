@@ -96,11 +96,11 @@
   .links.open {
     opacity: 1;
     background: #fff;
-    transform: translateY(10rem);
+    transform: translateY(12rem);
   }
 
   .link + .link {
-    margin-top: 8px;
+    margin-top: 16px;
   }
 
   .hamburger {
