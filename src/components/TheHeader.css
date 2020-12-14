@@ -7,8 +7,8 @@
 }
 
 .brand {
-  height: 36px;
-  width: 36px;
+  height: 2.25rem;
+  width: 2.25rem;
   background: var(--primary);
   position: relative;
   overflow: visible;
@@ -19,8 +19,8 @@
   content: "";
   display: block;
   position: absolute;
-  height: 28px;
-  width: 28px;
+  height: 1.75rem;
+  width: 1.75rem;
   bottom: -12px;
   right: -12px;
   background: var(--primary);
@@ -44,7 +44,7 @@
 .link.cta {
   background: var(--primary);
   color: #fff;
-  padding: 18px 32px;
+  padding: 1.125rem 2rem;
   border: 1px solid var(--primary);
   border-radius: 4px;
   transition: all 0.4s ease;
@@ -52,4 +52,59 @@
 
 .link.cta:hover {
   box-shadow: 7px 10px 57px -13px rgba(0, 0, 0, 0.58);
+}
+
+.hamburger {
+  display: none;
+}
+
+.line {
+  display: block;
+  height: 4px;
+  width: 32px;
+  border-radius: 2px;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+.line + .line {
+  margin-top: 6px;
+}
+
+@media only screen and (max-width: 780px) {
+  .header {
+    position: relative;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 10px 81px -8px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+  }
+
+  .links {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    padding: 2rem 0;
+    transform: translateY(-10rem);
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+  }
+
+  .links.open {
+    opacity: 1;
+    background: #fff;
+    transform: translateY(10rem);
+  }
+
+  .link + .link {
+    margin-top: 8px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
 }

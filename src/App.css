@@ -11,3 +11,9 @@ body {
   /* background: inherit; */
   padding: 1rem 2rem;
 }
+
+@media only screen and (max-width: 780px) {
+  .App {
+    padding: 0;
+  }
+}

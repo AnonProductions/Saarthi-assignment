@@ -9,7 +9,7 @@ const Content = () => {
         monitors
       </h1>
       <p className="hook__text">
-        Do you know what could beat the exciting feeling
+        Do you know what could beat the exciting feeling {}
         <br />
         of having a new computer ? Make your own PC!
       </p>
