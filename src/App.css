@@ -1,0 +1,13 @@
+body {
+  --primary: #2b2862;
+  --secondary: #606dfe;
+}
+
+.App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: inherit;
+  padding: 1rem 2rem;
+}

@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.brand {
+  height: 36px;
+  width: 36px;
+  background: var(--primary);
+  position: relative;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.brand::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  bottom: -12px;
+  right: -12px;
+  background: var(--primary);
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.link {
+  margin: 0 8px;
+  cursor: pointer;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.link.cta {
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 24px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+
+.link.cta:hover {
+  box-shadow: 7px 10px 57px -13px rgba(0, 0, 0, 0.58);
+}
